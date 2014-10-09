@@ -1,3 +1,28 @@
-body{
-	padding:20px;
+body{padding:160px 0px;}
+.nav-fbx {padding-top: 30px;}
+.col-sm-12{color: red;}
+.box-fbx-nav ul {list-style: none; padding: 0px;margin: 5px 0px;}
+.box-fbx-nav ul li{float: left; padding: 10px 5px;}
+.banner-fbx .carousel .item {width: 100%; max-height: 600px; }
+.banner-fbx .carousel .item img {    width: 100%;}
+.banner-fbx .carousel .carousel-control {    background: none;    border: none;    top: 50%;}
+.banner-fbx .box-fbx-nav ul li {	width: 25%;	padding: 0px;}
+.banner-fbx .box-fbx-nav ul li a img{	
+	width: 100%;
+	opacity: 1;
+	transition: opacity .25s ease-in-out;
+	-moz-transition: opacity .25s ease-in-out;
+	-webkit-transition: opacity .25s ease-in-out;
+}
+.banner-fbx .box-fbx-nav ul li a:hover img{
+	opacity:0.8;
+}
+
+#body-fbx .box-fbx-ftball h1{
+	margin-top: 65px;
+	border-bottom: solid 6px #dedfe1;
+}
+
+@media (max-width: 767px) { 
+
 }

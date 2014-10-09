@@ -18,17 +18,79 @@
     <![endif]-->
   </head>
   <body>
-    <header>
+    <header class="nav-fbx navbar  navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 logo"><img src="http://placehold.it/360x90" alt=""></div>
+          <div class="col-md-12">
+          	
+          	<div class="box-fbx-logo pull-left"><img src="http://placehold.it/360x90"  class="img-responsive" alt="Logo"></div>
+          	<div class="box-fbx-a pull-right">
+          		<img src="http://placehold.it/160x40" class="" alt="Idiomas">
+          		<img src="http://placehold.it/40x40"  class="" alt="">
+          		<img src="http://placehold.it/40x40"  class="" alt="">
+          		<img src="http://placehold.it/40x40"  class="" alt="">
+
+          	</div>
+          	<nav class="box-fbx-nav pull-right">
+          	 		<ul>
+          	 			<li>NOVEDADES</li>
+          	 			<li>CONTACTO</li>
+          	 			<li>CLIENTES</li>
+          	 			<li>DEPORTES</li>
+          	 			<li>CERTIFICACIONES</li>
+          	 			<li>ASESORAMIENTO</li>
+          	 			<li>CONTACTO</li>
+          	 		</ul>
+          	</nav> 	
+          </div>
         </div>
       </div>
     </header>
+    <section class="banner-fbx">
+	    <div id="myCarousel" class="carousel slide">
+	        <div class="carousel-inner">
+	            <div class="active item">
+	                <img src="http://placehold.it/1900x350/395c24/ffffff" alt="Slide1" />
+	            </div>
+	            <div class="item">
+	                <img src="http://placehold.it/1900x350/a8c2e3/ffffff" alt="Slide2" />
+	            </div>
+	            <div class="item">
+	                <img src="http://placehold.it/1900x350/646263/ffffff" alt="Slide3" />
+	            </div>
+	        </div>
+	 
+	    </div>
+
+	    <nav class="box-fbx-nav">
+	    	<ul>
+		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
+		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
+		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
+		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
+	    	</ul>
+	    </nav>
+	</section>
+
+
+	<main id="body-fbx">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 box-fbx-ftball">
+					<h1 class="text-center">F&Uacute;TBOL PROFESIONAL</h1> 		
+				</div>
+			</div>
+
+		</div>
+		
+	</main>
+
+
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="<?php echo site_url('js/bootstrap.min.js'); ?> "></script>
+    <script src="<?php echo site_url('assets/js/bootstrap.min.js'); ?> "></script>
   </body>
 </html>
