@@ -1,0 +1,5 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|assets|assets/img/primius/banners|robots\.txt|a/)
+RewriteRule ^(.*)$ /forbex/index.php/$1 [L] 
+
+
