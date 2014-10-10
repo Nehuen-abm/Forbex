@@ -33,7 +33,7 @@ class Site extends CI_Controller
 	
 
 	public function pagina(){
-		echo "say hola ".$idm;
+		echo "say hola ";
 	}
 
 }
