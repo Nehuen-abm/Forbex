@@ -26,9 +26,9 @@
           	<div class="box-fbx-logo pull-left"><img src="http://placehold.it/360x90"  class="img-responsive" alt="Logo"></div>
           	<div class="box-fbx-a pull-right">
           		<img src="http://placehold.it/160x40" class="" alt="Idiomas">
-          		<img src="http://placehold.it/40x40"  class="" alt="">
-          		<img src="http://placehold.it/40x40"  class="" alt="">
-          		<img src="http://placehold.it/40x40"  class="" alt="">
+          		<a href='<?php echo  site_url('es') ?>'> <img src="http://placehold.it/40x40/fe5858/ffff2d/&text=ES"  class="" alt=""></a>
+          		<a href='<?php echo  site_url('pr') ?>'> <img src="http://placehold.it/40x40/37c776/fcef1b/&text=PR"  class="" alt=""></a>
+          		<a href='<?php echo  site_url('en') ?>'> <img src="http://placehold.it/40x40/375dbf/ea324a/&text=EN"  class="" alt=""></a>
 
           	</div>
           	<nav class="box-fbx-nav pull-right">
@@ -78,7 +78,23 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-md-12 box-fbx-ftball">
-					<h1 class="text-center">F&Uacute;TBOL PROFESIONAL</h1> 		
+					<h1 class="text-center">  <?php  echo lang('msg_index_fp_titulo'); ?></h1>
+					<div class="col-md-6">
+			 			<p>  <?php  echo lang('msg_index_fp_text_col_a'); ?></p>
+			 		</div>
+			 		<div class="col-md-6">
+			 			<p>   <?php  echo lang('msg_index_fp_text_col_b'); ?> </p>
+			 		</div> 	
+          <p>
+          
+          </p>	
+          <p>
+            
+
+
+
+          
+          </p>
 				</div>
 			</div>
 
@@ -92,5 +108,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo site_url('assets/js/bootstrap.min.js'); ?> "></script>
+    <script src="<?php echo site_url('assets/js/script.js'); ?> "></script>
   </body>
 </html>

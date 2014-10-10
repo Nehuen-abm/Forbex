@@ -38,8 +38,30 @@
 |
 */
 
+
 $route['default_controller'] = "site";
+$route['(:any)/pagina'] = "site/pagina";
+
 $route['404_override'] = '';
+
+// $route['es/testLanguage'] = "testLanguage/index/es";
+
+// $route['en/testLanguage'] = "testLanguage/index/en";
+
+// $route['pr/testLanguage'] = "testLanguage/index/pr";
+
+
+$route['^en/(.+)$'] = "$1";
+$route['^es/(.+)$'] = "$1"; 
+$route['^pr/(.+)$'] = "$1"; 
+ 
+$route['^en$'] = $route['default_controller'];
+$route['^es$'] = $route['default_controller'];
+$route['^pr$'] = $route['default_controller'];
+
+
+
+
 
 
 /* End of file routes.php */
