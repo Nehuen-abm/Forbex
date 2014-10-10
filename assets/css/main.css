@@ -1,23 +1,6 @@
-@import url('../fonts/ptsans_bold_macroman/stylesheet.css');
-@import url('../fonts/ptsans_regular_macroman/stylesheet.css');
-@import url('../fonts/ptsansnarrow_bold_macroman/stylesheet.css');
-@import url('../fonts/ptsansnarrow_regular_macroman/stylesheet.css');
-
-
-
 body{padding:160px 0px;}
-.nav-fbx {padding: 30px 0px 10px;}
-.nav-fbx.active{
-  background-color: #fff;
-  opacity: 1;
-  padding: 5px;
-  transition: opacity,padding .25s ease-in-out;
-  -moz-transition: opacity,padding .25s ease-in-out;
-  -webkit-transition: opacity,padding .25s ease-in-out;
-
-}
+.nav-fbx {padding-top: 30px;}
 .col-sm-12{color: red;}
-
 .box-fbx-nav ul {list-style: none; padding: 0px;margin: 5px 0px;}
 .box-fbx-nav ul li{float: left; padding: 10px 5px;}
 .banner-fbx .carousel .item {width: 100%; max-height: 600px; }
@@ -37,10 +20,7 @@ body{padding:160px 0px;}
 
 #body-fbx .box-fbx-ftball h1{
 	margin-top: 65px;
-	border-bottom: solid 2px #dedfe1;
-	padding-bottom: 20px;
-    font-family: 'pt_sans_narrowbold';
-    font-size: 31px;
+	border-bottom: solid 6px #dedfe1;
 }
 
 @media (max-width: 767px) { 

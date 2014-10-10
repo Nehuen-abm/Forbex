@@ -1,39 +1,28 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Site extends CI_Controller
-{
-	function __construct(){
-		parent::__construct();
+class Site extends CI_Controller {
 
-		$language = $this->uri->segment(1);
-
-		switch ($language) {
-			case 'en':
-			case 'es':
-			case 'pr':
-				 $this->lang->load('message',$language);
-				break;
-			default:
-				 $this->lang->load('message','en');
-				 redirect(site_url('en/'));
-				break;
-		}
-
-	
-	}
-
-	public function index() {
-
-		$data["language_msg"] = $this->lang->line("msg_hello");
-		
-		$this->load->view('template', $data);
+	/**
+	 * Index Page for this controller.
+	 *
+	 * Maps to the following URL
+	 * 		http://example.com/index.php/welcome
+	 *	- or -  
+	 * 		http://example.com/index.php/welcome/index
+	 *	- or -
+	 * Since this controller is set as the default controller in 
+	 * config/routes.php, it's displayed at http://example.com/
+	 *
+	 * So any other public methods not prefixed with an underscore will
+	 * map to /index.php/welcome/<method_name>
+	 * @see http://codeigniter.com/user_guide/general/urls.html
+	 */
+	public function index()
+	{
+		$this->load->view('template');
 		
 	}
-
-	
-
-	public function pagina(){
-		echo "say hola ".$idm;
-	}
-
 }
+
+/* End of file welcome.php */
+/* Location: ./application/controllers/welcome.php */
