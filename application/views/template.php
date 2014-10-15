@@ -25,13 +25,14 @@
         <div class="row">
           <div class="col-md-12">
           	
-          	<div class="box-fbx-logo pull-left"><img src="http://placehold.it/360x90"  class="img-responsive" alt="Logo"></div>
+          	<div class="box-fbx-logo pull-left"><img src="<?php echo site_url('assets/images/web/boceto_futbol_profesional.jpg');?>"  class="img-responsive" alt="Logo"></div>
           	<div class="box-fbx-a pull-right">
-          		<img src="http://placehold.it/160x40" class="" alt="Idiomas">
-          		<a href='<?php echo  site_url('es') ?>'> <img src="http://placehold.it/40x40/fe5858/ffff2d/&text=ES"  class="" alt=""></a>
-          		<a href='<?php echo  site_url('pr') ?>'> <img src="http://placehold.it/40x40/37c776/fcef1b/&text=PR"  class="" alt=""></a>
-          		<a href='<?php echo  site_url('en') ?>'> <img src="http://placehold.it/40x40/375dbf/ea324a/&text=EN"  class="" alt=""></a>
-
+          	  
+                  <img src="<?php echo site_url('assets/images/web/tel.jpg');?>" class="" alt="Idiomas">
+                  <a href='<?php echo  site_url('es') ?>'> <img src="http://placehold.it/40x40/fe5858/ffff2d/&text=ES"  class="img-circle" alt=""></a>
+                  <a href='<?php echo  site_url('pr') ?>'> <img src="http://placehold.it/40x40/37c776/fcef1b/&text=PR"  class="img-circle" alt=""></a>
+                  <a href='<?php echo  site_url('en') ?>'> <img src="http://placehold.it/40x40/375dbf/ea324a/&text=EN"  class="img-circle" alt=""></a> 
+               
           	</div>
           	<nav class="box-fbx-nav pull-right">
           	 		<ul>
@@ -52,25 +53,24 @@
 	    <div id="myCarousel" class="carousel slide">
 	        <div class="carousel-inner">
 	            <div class="active item">
-	                <img src="http://placehold.it/1900x350/395c24/ffffff" alt="Slide1" />
+	                <!-- <img src="http://placehold.it/1900x350/395c24/ffffff" alt="Slide1" /> -->
 	            </div>
 	            <div class="item">
-	                <img src="http://placehold.it/1900x350/a8c2e3/ffffff" alt="Slide2" />
+	                <!-- <img src="http://placehold.it/1900x350/a8c2e3/ffffff" alt="Slide2" /> -->
 	            </div>
 	            <div class="item">
-	                <img src="http://placehold.it/1900x350/646263/ffffff" alt="Slide3" />
+	                <!-- <img src="http://placehold.it/1900x350/646263/ffffff" alt="Slide3" /> -->
 	            </div>
 	        </div>
 	 
 	    </div>
 
 	    <nav class="box-fbx-nav">
-	    	<ul>
-		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
-		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
-		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
-		    	<li><a href="#"><img src="http://placehold.it/475x200/646263/ffffff" alt="Slide1" /></a> </li>
-	    	</ul>
+            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-a.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
+            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-b.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
+            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-c.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
+            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-d.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>    
+
 	    </nav>
 	</section>
 
@@ -96,7 +96,9 @@
                 <div class="col-md-12 clear"><hr></div>
 
                 <div class="col-md-6">
-                  <p>  <img src="http://placehold.it/390x150"/></p>
+                  <div class="fbx-ico-cancha">  
+                    <img src="<?php echo site_url('assets/images/web/cancha.png');?>"/>
+                  </div>
                 </div>
 
                 <div class="col-md-6">
@@ -124,9 +126,9 @@
 
             </p>
             <p>
-              <img src="http://placehold.it/250x100"  />
-              <img src="http://placehold.it/250x100"  />
-              <img src="http://placehold.it/250x100"  />
+              <img src="<?php echo site_url('assets/images/web/fbx-ta.jpg');?>"  />
+              <img src="<?php echo site_url('assets/images/web/fbx-tb.jpg');?>"  />
+              <img src="<?php echo site_url('assets/images/web/fbx-tc.jpg');?>"  />
             </p>
           </div>
         </div>
@@ -143,16 +145,16 @@
 
 
 
-                        <img alt="Prueba" class="img-responsive wow fadeInLeft capa-1" src="<?php echo site_url('assets/images/capa_1.png'); ?>" data-wow-delay="0.1s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeInLeft capa-2" src="<?php echo site_url('assets/images/capa_2.png'); ?>" data-wow-delay="0.3s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeInLeft capa-3" src="<?php echo site_url('assets/images/capa_3.png'); ?>" data-wow-delay="0.5s"/>
+                        <img alt="Prueba" class="img-responsive wow fadeInDown capa-1" src="<?php echo site_url('assets/images/capa_1.png'); ?>" data-wow-delay="0.1s"/>
+                        <img alt="Prueba" class="img-responsive wow fadeInDown capa-2" src="<?php echo site_url('assets/images/capa_2.png'); ?>" data-wow-delay="0.3s"/>
+                        <img alt="Prueba" class="img-responsive wow fadeInDown capa-3" src="<?php echo site_url('assets/images/capa_3.png'); ?>" data-wow-delay="0.5s"/>
                         <img alt="Prueba" class="img-responsive wow fadeIn     capa-4" src="<?php echo site_url('assets/images/capa_4textoyflechas.png'); ?>" data-wow-delay="0.8s"/>
                         <img alt="Prueba" class="img-responsive wow fadeIn     capa-5" src="<?php echo site_url('assets/images/logo_tencate.png'); ?> " data-wow-delay="1s"/>
                       </figure>
                         
                     </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="descripcion  wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="descripcion  wow fadeInDown" data-wow-delay="0.1s">
                             
                           <h3>11.000 MD</h3>
                             <p>
@@ -171,12 +173,12 @@
             </div>
     </section>
 
-    <section class="box-fbx-gris fbx-aim-b">
+    <section class="box-fbx-gris bg-arrow fbx-aim-b ">
           <div class="container">
             <div class="row">
               
               <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="descripcion wow fadeInLeft " data-wow-delay="0.2s">
+                <div class="descripcion wow fadeInDown " data-wow-delay="0.2s">
                     
                   <h3>MF PRO</h3>
                     <p>
@@ -191,7 +193,7 @@
                 </div>
             </div>
              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <p  class="wow fadeInRight " data-wow-delay="0.2s"> <img src="http://placehold.it/555x400"/></p>
+                  <p  class="wow fadeInRight " data-wow-delay="0.2s"> <img src="<?php echo site_url('assets/images/web/img-aim-b.jpg');?> " class="img-responsive"/></p>
             </div>
             </div>
           </div>
@@ -203,20 +205,11 @@
                    
                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
                        
-                      <figure class="aim pull-left" >
-
-
-
-                        <img alt="Prueba" class="img-responsive wow fadeInLeft capa-1" src="<?php echo site_url('assets/images/capa_1.png'); ?>" data-wow-delay="0.1s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeInLeft capa-2" src="<?php echo site_url('assets/images/capa_2.png'); ?>" data-wow-delay="0.3s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeInLeft capa-3" src="<?php echo site_url('assets/images/capa_3.png'); ?>" data-wow-delay="0.5s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeIn     capa-4" src="<?php echo site_url('assets/images/capa_4textoyflechas.png'); ?>" data-wow-delay="0.8s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeIn     capa-5" src="<?php echo site_url('assets/images/logo_tencate.png'); ?> " data-wow-delay="1s"/>
-                      </figure>
+                     <p><img src="<?php echo site_url('assets/images/web/img-aim-c.jpg');?>" class="img-responsive"/></p>
                         
                     </div>
                       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="descripcion  wow fadeInRight" data-wow-delay="0.1s">
+                        <div class="descripcion  wow fadeInDown" data-wow-delay="0.1s">
                             
                           <h3>360 M</h3>
                             <p>
@@ -248,17 +241,22 @@
                               </p>
                          </div>
                          <div class="col-md-6">
-                           <img src="http://placehold.it/475x300"/>
+                           <img src="<?php echo site_url('assets/images/web/img-relleno.jpg');?>"/>
                          </div>
                        </div>
                     </div>
                 </div>
-                
+               
             </div>
+
     </section>
 
-    <section class="fbx-vista-obras">
+    <section class="fbx-vista-obras ">
+
       <div class="container">
+         <div class="row">
+          <hr class="hr-fbx">
+        </div>
         <div class="row">
           <div class="col-md-12 text-center">
             <h1>OBRAS DE FÚTBOL PROFESIONAL</h1>
@@ -303,41 +301,49 @@
                <h2>CERTIFICACIONES</h2>
                <p>Forbex cuenta con numerosos certificados internacionales que garantizan la alta calidad de su césped sintético. </p>
                <p >
-                 <img src="http://placehold.it/200x200"/>
-                 <img src="http://placehold.it/200x200"/>
-                 <img src="http://placehold.it/200x200"/>
-                 <img src="http://placehold.it/200x200"/>
+                 <img src="<?php echo site_url('assets/images/web/img-ca.jpg'); ?>"/>
+                 <img src="<?php echo site_url('assets/images/web/img-cb.jpg'); ?>"/>
+                 <img src="<?php echo site_url('assets/images/web/img-cc.jpg'); ?>"/>
+                 <img src="<?php echo site_url('assets/images/web/img-cd.jpg'); ?>"/>
+                 <img src="<?php echo site_url('assets/images/web/img-ce.jpg'); ?>"/>
                </p>
            </div>
          </div>
        </div>
     </section>    
-    <section class="box-fbx-bf-fixed">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-6 col-md-offset-6">
+    <section class="parallax-quote parallaxBg box-fbx-bf-fixed">
+        <div class="container">
+          <!--   <div class="parallax-quote-in">
+                <p>If you can design one thing <span class="color-green">you can design</span> everything. <br> Just Believe It.</p>
+                <small>- HtmlStream -</small>
+            </div> -->
+             <div class="col-md-7 col-md-offset-5">
              <h2>FORBEX ESTARÁ PRESENTE EN CADA PASO</h2>
               <p>
                 Nuestros asesores comerciales lo asistiran desde el momento de la creación de la cancha, ofreciendole toda nuestra variedad de servicios para que sólo tener que preocuparse por el juego.
               </p>
              
                 <ul>
-                  <li><p><img src="http://placehold.it/100x100"/><br><span>test</span></p></li>
-                  <li><p><img src="http://placehold.it/100x100"/><br><span>test</span></p></li>
-                  <li><p><img src="http://placehold.it/100x100"/><br><span>test</span></p></li>
-                  <li><p><img src="http://placehold.it/100x100"/><br><span>test</span></p></li>
+                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-cca.png'); ?>"/><br><span>test</span></p></li>
+                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-ccb.png'); ?>"/><br><span>test</span></p></li>
+                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-ccc.png'); ?>"/><br><span>test</span></p></li>
+                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-ccd.png'); ?>"/><br><span>test</span></p></li>
+               
                 </ul>
-              
+           
            </div>
-         </div>
-       </div>
+        </div>
     </section>
+  
     <section class="box-fbx-empresa">
        <div class="container">
+
          <div class="row">
 
+
+
             <div class="col-md-6">
-              <p><img src="http://placehold.it/500x130"/></p>
+              <p><img src="<?php echo site_url('assets/images/web/25afbx.jpg'); ?>"/></p>
            </div> 
            <div class="col-md-6">
             <h3>MAS DE 25 AÑOS FABRICANDO EL MEJOR CÉSPED</h3>
@@ -349,7 +355,8 @@
               </p>
            </div>
          </div>
-         <div class="col-md-12 clear"><hr></div>
+
+         <div class="col-md-12 clear"><hr class="hr-fbx-b"/></div>
            <div class="col-md-7">
               <h3>CONTACTO</h3>
               <p>Puede llamarnos, enviarnos un mail, o bien, completar el formulario a continuación.  A la brevedad, uno de nuestros representantes lo va a estar contactando.
@@ -363,15 +370,20 @@
               <p>
                 0 800 666 0613
               </p>
-              <div class="clear"><hr></div>
-              <a href="#" class="btn btn-link "><i class="fa fa-youtube  fa-2x"></i> </a>
+
+           
+         <div class="row"> <div class="col-md-12">  <div class="row"><div class="col-md-7" > <p><hr class="hr-fbx no-mp"></p> </div></div></div></div>
+
+             <p> <a href="#" class="btn btn-link "><i class="fa fa-youtube  fa-2x"></i> </a>
               <a href="#" class="btn btn-link "><i class="fa fa-skype  fa-2x"></i> </a>
-              <a href="#" class="btn btn-link "><i class="fa fa-facebook-square  fa-2x"></i> </a>
+              <a href="#" class="btn btn-link "><i class="fa fa-facebook-square  fa-2x"></i> </a></p>
 
            </div> 
 
-           <div class="col-md-5">
-              <form class="form form-at-empresa" action="#" method="POST" id="mail_empresa">
+
+           <div class="col-md-5  form-at-empresa" >
+
+              <form class="form" action="#" method="POST" id="mail_empresa">
                 <div class="form-group">
                      <label for="nombre" class="text-left"> Nombre/Empresa:</label>
                     <input type="text" class="form-control input-sm" id="nombre" name="nombre" placeholder="" required="" data-validation-required-message="Por favor ingrese su nombre/empresa.">
@@ -420,7 +432,16 @@
        <nav >
          <div class="container">
            <div class="row">
-             <div class="pull-left"><img src="http://placehold.it/180x80"/></div>
+             <div class="pull-left"><img src="<?php echo site_url('assets/images/web/footer-logo.jpg');?>"/></div>
+             <div class="pull-right">
+               <ul>
+                 <li><a href="#">Términos de uso</a></li>
+                 <li><a href="#">Política de privacidad</a></li>
+                 <li><a href="#">Web Master</a></li>
+                 <li><a href="#">Mapa del sitio</a></li>
+               </ul>
+
+             </div>
            </div>
          </div>
        </nav>
@@ -437,6 +458,7 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="<?php echo site_url('assets/js/bootstrap.min.js'); ?> "></script>
     <script src="<?php echo site_url('assets/js/wow.min.js'); ?> "></script>
+    <script src="<?php echo site_url('assets/js/jquery.parallax.js'); ?> "></script>
     <script src="<?php echo site_url('assets/js/script.js'); ?> "></script>
   </body>
 </html>
