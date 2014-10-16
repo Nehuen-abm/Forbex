@@ -7,12 +7,13 @@
 
 body{padding: 120px 0px 0px; color: #4c535b;}
 .nav-fbx {
-	padding: 15px 0px 10px;margin-bottom: 0px;font-family: 'pt_sansregular';
+	padding: 25px 0px 0px;margin-bottom: 0px;font-family: 'pt_sansregular';
 	transition: opacity,padding .55s ease-in-out;
     -moz-transition: opacity,padding .55s ease-in-out;
     -webkit-transition: opacity,padding .55s ease-in-out;
 
 }
+
 
 
  h1,h2,h3{
@@ -22,10 +23,12 @@ body{padding: 120px 0px 0px; color: #4c535b;}
     margin-top: 30px;*/
 
 }
+/*h2{font-size: 1.2em}*/
 h4{
 	font-family: 'pt_sansbold';
 }
 p,label,input{
+	font-size: 16px;
 	font-family: 'pt_sansregular';
 }
 .nav-fbx.active{
@@ -39,13 +42,15 @@ p,label,input{
   /*background: #f1f1f1;*/
 }
 section.banner-fbx {
-    margin-top: 15px;
+    /* margin-top: 15px; */
 }
-.box-fbx-a {margin: 15px 0px 8px;}
+.box-fbx-a {
+    margin-top: 12px;
+}
 .box-fbx-nav ul {list-style: none; padding: 0px;margin: 0px 0px;}
 .box-fbx-nav ul li{float: left; padding:  5px; font-family: 'pt_sansregular';}
 
-.banner-fbx .carousel .item {width: 100%; min-height: 400px; background:url('../images/bgs/banner.jpg');}
+.banner-fbx .carousel .item {width: 100%; min-height: 400px; background:url('../images/bgs/banner.jpg');background-size: cover;}
 
 .banner-fbx .carousel .item img {    width: 100%;}
 .banner-fbx .carousel .carousel-control {    background: none;    border: none;    top: 50%;}
@@ -53,16 +58,38 @@ section.banner-fbx {
 .banner-fbx .box-fbx-nav a img{	
 	width: 100%;
 	opacity: 1;
-	/*height: 260px;*/
+	/*max-height: 183px;*/
 	transition: opacity .25s ease-in-out;
 	-moz-transition: opacity .25s ease-in-out;
 	-webkit-transition: opacity .25s ease-in-out;
+	min-height: 140px;
 }
 .banner-fbx .box-fbx-nav div  a:hover img{
 	opacity:0.8;
 }
-.fbx-ico-cancha {position: relative;height: 170px;z-index: 99;top: -35px;}
-.fbx-ico-cancha img {position: absolute;}
+
+.fbx-borde{
+	border-top:solid 2px #dedfe1;
+	border-bottom:solid 2px #dedfe1;
+	margin: 40px 0px;
+}
+.fbx-ico-cancha {
+	/*position: relative;
+	
+	z-index: 99;
+	top: -35px;
+	background: url('../images/web/cancha.png') no-repeat;
+	background-size: contain;
+	background-position: 0px 53px;
+	/*height: 220px;*/
+	/*width: 50%;*/*/
+	margin-top: -;
+	
+margin-top: -15px;
+	
+margin-bottom: -10px;
+}
+
 
 #body-fbx .box-fbx-ftball h1{
 	margin-top: 65px;
@@ -71,10 +98,12 @@ section.banner-fbx {
     font-family: 'pt_sans_narrowbold';
     font-size: 31px;
 }
+
 #body-fbx .box-fbx-ftball h2{
 	font-size: 27px;
 	color: #7c8187;
 	font-family:'pt_sansbold';
+	padding: 20px;
 }
 
 .box-fbx-ftball hr{
@@ -154,6 +183,7 @@ padding: 00px 0px 30px;
 	padding-left: 50px;
 	padding-right: 50px;
 }
+.fbx-relleno img{margin: 0 auto;}
 .galeria div{padding: 0px;}
 .galeria div img{
 	padding:5px;
@@ -303,113 +333,87 @@ margin-left: 71px; position: relative; z-index: 10;
 	height: 100%; 
 	content: " ";
 	position: absolute;
-	background: url(../img/patterns/gridtile.png) repeat;
+	/*background: url(../img/patterns/gridtile.png) repeat;*/
 }
 
-.parallax-quote-in {
-	z-index: 1;
-	padding: 0 80px;
- 	position: relative; 
+
+
+
+.box-fbx-logo img.img-responsive {
+    height: 70px;
+    margin-top: 5px;
 }
 
-.parallax-quote-in p {
-	color: #fff;
-	font-size: 28px;
- 	text-transform: uppercase;
-	font-family: 'Open Sans', sans-serif;
+.box-fbx-nav .icon-bar{
+	color: #f1f1f1;
 }
 
-.parallax-quote-in p:after,
-.parallax-quote-in p:before {
-	content: ' " ';
-	position: absolute;
-	font-family: Tahoma;
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus{
+
+}
+.navbar-default{
+	background: transparent;
+	border:none;
+}
+nav.pull-right.navbar.navbar-default.box-fbx-nav{
+	margin-bottom: 0px;
+    min-height: 30px;
 }
 
-.parallax-quote-in p:after {
-	margin-left: 3px;
+nav.pull-right.navbar.navbar-default.box-fbx-nav ul li a {
+    padding: 0px;
+}
+@media(max-width:992px){
+section.banner-fbx {
+margin-top: 20px;
+}
+}
+@media(max-width:767px){
+	#body-fbx .box-fbx-productos p{padding: 10px;}
+
+#body-fbx .box-fbx-ftball h2{
+	font-size: 24px;
+}
+section.banner-fbx {
+margin-top: 0px;
 }
 
-.parallax-quote-in p:before {
-	margin-left: -15px;
+.box-fbx-logo img.img-responsive {
+    height: auto;
+    /*padding-top: 10px;*/
+	
 }
-
-.parallax-
--in small {
-	color: #bbb;
-	font-size: 13px;
-	font-weight: 400;
-	text-transform: uppercase;
+.tel{
+	display: none;
+	padding-bottom: 5px;
 }
-
-/*Parallax Twitter*/
-.parallax-twitter {
-	color: #fff;
-	padding: 100px 0;
-	position: relative;
-	text-align: center;
-	background: #333 url(../img/bg/bg2.jpg) 50% 0 fixed;
-}
-
-.parallax-twitter:after {
-	top: 0;
-	left: 0;
+.box-fbx-nav ul li{
+	float: none;
 	width: 100%;
-	height: 100%; 
-	content: " ";
-	position: absolute;
-	background: rgba(0,0,0,0);
 }
+body{padding: 0px;}
 
-.parallax-twitter:before {
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%; 
-	content: " ";
-	position: absolute;
-	background: url(../img/patterns/gridtile.png) repeat;
-}
 
-.parallax-twitter-in {
-	z-index: 1;
+.nav-fbx{
 	position: relative;
+	padding-top: 10px;
+	min-height: 110px;
+
 }
 
-/*Twitter Block (owl-controls)*/
-.parallax-twitter-in ul {
-	margin: 0;
+nav.pull-right.navbar.navbar-default.box-fbx-nav {
+    right: 0px;
+    top:60px;
+    position: absolute;
+    width: 100%;
 }
 
-.parallax-twitter-in li {
-	color: #fff;
+
+div#bs-example-navbar-collapse-1{
+	background: #fff;
 }
 
-.parallax-twitter-in li p {
-	color: #fff;
-	font-size: 18px;
-	font-weight: 200;
-	/*margin-bottom: 0;*/
 }
+@media(min-width:768px){}
 
-.parallax-twitter-in li a {
-	color: #eee;
-	text-decoration: underline;
-}
-
-.parallax-twitter-in li a:hover {
-	/*color: #72c02c;*/
-	text-decoration: none;
-}
-
-.parallax-twitter-in li span {
-	color: #ddd;
-	display: block;
-	font-size: 14px;
-	font-weight: 400;
-	margin-bottom: 20px;
-}
-
-.parallax-twitter-in .owl-page {
-	width: 18px;
-}
+@media(min-width:1200px){}

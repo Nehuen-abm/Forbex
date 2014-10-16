@@ -23,29 +23,47 @@
     <header class="nav-fbx navbar  navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-          	
-          	<div class="box-fbx-logo pull-left"><img src="<?php echo site_url('assets/images/web/boceto_futbol_profesional.jpg');?>"  class="img-responsive" alt="Logo"></div>
-          	<div class="box-fbx-a pull-right">
-          	  
-                  <img src="<?php echo site_url('assets/images/web/tel.jpg');?>" class="" alt="Idiomas">
-                  <a href='<?php echo  site_url('es') ?>'> <img src="http://placehold.it/40x40/fe5858/ffff2d/&text=ES"  class="img-circle" alt=""></a>
-                  <a href='<?php echo  site_url('pr') ?>'> <img src="http://placehold.it/40x40/37c776/fcef1b/&text=PR"  class="img-circle" alt=""></a>
-                  <a href='<?php echo  site_url('en') ?>'> <img src="http://placehold.it/40x40/375dbf/ea324a/&text=EN"  class="img-circle" alt=""></a> 
-               
-          	</div>
-          	<nav class="box-fbx-nav pull-right">
-          	 		<ul>
-          	 			<li>NOVEDADES</li>
-          	 			<li>CONTACTO</li>
-          	 			<li>CLIENTES</li>
-          	 			<li>DEPORTES</li>
-          	 			<li>CERTIFICACIONES</li>
-          	 			<li>ASESORAMIENTO</li>
-          	 			<li>CONTACTO</li>
-          	 		</ul>
-          	</nav> 	
+          <div class="col-md-4 col-xs-6">
+            
+            <div class="box-fbx-logo pull-left"><img src="<?php echo site_url('assets/images/web/boceto_futbol_profesional.jpg');?>"  class="img-responsive" alt="Logo"></div>
+            
           </div>
+           <div class="col-md-8 col-sm-6 col-xs-6">
+          	
+          	 <div class="box-fbx-a pull-right">
+              
+                  <img  src="<?php echo site_url('assets/images/web/tel.jpg');?>"  class="tel">
+                  <a href='<?php echo  site_url('es') ?>'> <img src="http://placehold.it/30x30/&text=ES"  class="img-circle" alt=""></a>
+                  <a href='<?php echo  site_url('pr') ?>'> <img src="http://placehold.it/30x30/&text=PR"  class="img-circle" alt=""></a>
+                  <a href='<?php echo  site_url('en') ?>'> <img src="http://placehold.it/30x30/&text=EN"  class="img-circle" alt=""></a> 
+               
+            </div>
+           
+           	
+          </div>
+           <nav class=" pull-right navbar navbar-default box-fbx-nav">
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+             
+              </div>
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                 <ul class="nav navbar-nav">
+                  <li><a href="#">NOVEDADES</a></li>
+                  <li><a href="#">EMPRESA</a></li>
+                  <li><a href="#">CLIENTES</a></li>
+                  <li><a href="#">DEPORTES</a></li>
+                  <li><a href="#">CERTIFICACIONES</a></li>
+                  <li><a href="#">ASESORAMIENTO</a></li>
+                  <li><a href="#">CONTACTO</a></li>
+                </ul>
+              </div>
+            </nav>
+
         </div>
       </div>
     </header>
@@ -66,10 +84,10 @@
 	    </div>
 
 	    <nav class="box-fbx-nav">
-            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-a.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
-            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-b.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
-            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-c.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
-            <div class="col-md-3"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-d.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>    
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-a.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-b.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-c.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>
+            <div class="col-md-3 col-sm-3 col-xs-6"><a href="#"><img src="<?php echo site_url('assets/images/bgs/btn-d.jpg');?>"  class="img-responsive" alt="Slide1" /></a></div>    
 
 	    </nav>
 	</section>
@@ -85,31 +103,38 @@
                   <h1 class="text-center">  <?php  echo lang('msg_index_fp_titulo'); ?></h1>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                   <p>  <?php  echo lang('msg_index_fp_text_col_a'); ?></p>
                 </div>
 
-                <div class="col-md-6">
+                <div class="col-md-6 col-sm-6 col-xs-6">
                   <p>   <?php  echo lang('msg_index_fp_text_col_b'); ?> </p>
                 </div>  
 
-                <div class="col-md-12 clear"><hr></div>
 
-                <div class="col-md-6">
-                  <div class="fbx-ico-cancha">  
-                    <img src="<?php echo site_url('assets/images/web/cancha.png');?>"/>
+
+                <div class="col-md-12 col-sm-12 col-xs-12 fbx-borde">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6 col-xs-6 hidden-xs">
+                      <div class="fbx-ico-cancha">  
+                        <img src="<?php echo site_url('assets/images/web/cancha.png');?> " class="img-responsive"/>
+                      </div>
+                    </div>
+
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                       <h2>
+                          ES MOMENTO DE PENSAR EN LAS TÁCTICAS, 
+                          PORQUE PARA LOGRAR EL JUEGO PERFECTO
+                          EL CAMPO, SIN DUDAS, ES FORBEX.
+                        </h2>
+                    </div> 
                   </div>
                 </div>
+              <!--   <div class="col-md-12  col-sm-12 col-xs-12 clear"><hr></div>
 
-                <div class="col-md-6">
-                 <h2>
-                    ES MOMENTO DE PENSAR EN LAS TÁCTICAS, 
-                    PORQUE PARA LOGRAR EL JUEGO PERFECTO
-                    EL CAMPO, SIN DUDAS, ES FORBEX.
-                  </h2>
-                </div> 
+                
 
-                <div class="col-md-12 clear"><hr></div>
+                <div class="col-md-12 col-sm-12 col-xs-12 clear"><hr></div> -->
           </div>
           
         </div>  
@@ -125,11 +150,20 @@
               brindandoles 3 productos diferentes con la calidad que exigen los mas altos estándares.
 
             </p>
-            <p>
-              <img src="<?php echo site_url('assets/images/web/fbx-ta.jpg');?>"  />
-              <img src="<?php echo site_url('assets/images/web/fbx-tb.jpg');?>"  />
-              <img src="<?php echo site_url('assets/images/web/fbx-tc.jpg');?>"  />
-            </p>
+          <div class="col-md-10 col-md-offset-1 col-sm-12">
+            <div class="row">
+                <div class="col-md-4 col-sm-4 col-xs-4"> 
+                  <img src="<?php echo site_url('assets/images/web/fbx-ta.jpg');?>" class="img-responsive" />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4">
+                  <img src="<?php echo site_url('assets/images/web/fbx-tb.jpg');?>" class="img-responsive"  />
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-4"> 
+                  <img src="<?php echo site_url('assets/images/web/fbx-tc.jpg');?>" class="img-responsive" />
+                </div>
+            </div>
+          </div>
+          
           </div>
         </div>
       </div>
@@ -139,7 +173,7 @@
                 <div class="row">
                     
                    
-                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                     <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
                        
                       <figure class="aim pull-left" >
 
@@ -153,7 +187,7 @@
                       </figure>
                         
                     </div>
-                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                      <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
                         <div class="descripcion  wow fadeInDown" data-wow-delay="0.1s">
                             
                           <h3>11.000 MD</h3>
@@ -228,7 +262,7 @@
 
                     <div class="col-md-12  col-sm-12  col-xs-12 fbx-relleno">
                        <div class="row">
-                         <div class="col-md-6 box-fbx-text">
+                         <div class="col-md-6 col-sm-6  col-xs-12 box-fbx-text">
                             <h2>La importancia del relleno</h2>
                             <p>
                               Para optimizar el rendimiento de un campo de césped sintético, el relleno del mismo debe contener 10kg de caucho por m2. 
@@ -240,8 +274,8 @@
                                 El caucho, al incluirse en los campos, debe tener una granulometría especial, detallada por los laboratorios de la FIFA. Esta granulometría permite que el producto dure más y tenga una mayor consistencia..
                               </p>
                          </div>
-                         <div class="col-md-6">
-                           <img src="<?php echo site_url('assets/images/web/img-relleno.jpg');?>"/>
+                         <div class="col-md-6 col-sm-6  col-xs-12">
+                           <img src="<?php echo site_url('assets/images/web/img-relleno.jpg');?>" class="img-responsive"/>
                          </div>
                        </div>
                     </div>
@@ -264,28 +298,28 @@
                 Los países que más juegan este deporte nos eligen para sus proyectos.
               </p>
           </div>
-          <div class="col-md-12 galeria">
-           <div class="col-md-9">
+          <div class="col-md-12 col-sm-12 col-xs-12 galeria">
+           <div class="col-md-9 col-sm-9 col-xs-9" >
              <img src="<?php echo site_url('assets/images/imagenes obras/01_river.jpg'); ?>"   class="img-responsive">
 
            
-               <div class="col-md-3"><img src="<?php echo site_url('assets/images/imagenes obras/02_grecia.jpg'); ?>"  class="img-responsive"></div>
-               <div class="col-md-9"><img src="<?php echo site_url('assets/images/imagenes obras/3.jpg'); ?>"          class="img-responsive"></div>
+               <div class="col-md-3 col-sm-3 col-xs-3"><img src="<?php echo site_url('assets/images/imagenes obras/02_grecia.jpg'); ?>"  class="img-responsive"></div>
+               <div class="col-md-9 col-sm-9  col-xs-3 "><img src="<?php echo site_url('assets/images/imagenes obras/3.jpg'); ?>"          class="img-responsive"></div>
              
            </div>
-           <div class="col-md-3">
+           <div class="col-md-3 col-sm-3  col-xs-3 " >
              <img src="<?php echo site_url('assets/images/imagenes obras/4.jpg'); ?>" class="img-responsive">
            </div>
-           <div class="col-md-6">
+           <div class="col-md-6 col-sm-6   col-xs-6" >
             <img src="<?php echo site_url('assets/images/imagenes obras/5.jpg'); ?>" class="img-responsive">
             <img src="<?php echo site_url('assets/images/imagenes obras/7.jpg'); ?>" class="img-responsive">
            </div>
 
 
-           <div class="col-md-6">   
+           <div class="col-md-6 col-sm-6  col-xs-6">   
                 <img src="<?php echo site_url('assets/images/imagenes obras/6.jpg'); ?>" class="img-responsive">
-                <div class="col-md-6"><img src="<?php echo site_url('assets/images/imagenes obras/8.jpg'); ?>" class="img-responsive"></div>
-                <div class="col-md-6"><img src="<?php echo site_url('assets/images/imagenes obras/9.jpg'); ?>" class="img-responsive"></div>
+                <div class="col-md-6 col-sm-6  col-xs-6"><img src="<?php echo site_url('assets/images/imagenes obras/8.jpg'); ?>" class="img-responsive"></div>
+                <div class="col-md-6  col-sm-6  col-xs-6"><img src="<?php echo site_url('assets/images/imagenes obras/9.jpg'); ?>" class="img-responsive"></div>
            </div>
 
           </div>
@@ -300,13 +334,23 @@
            <div class="col-md-12 text-center">
                <h2>CERTIFICACIONES</h2>
                <p>Forbex cuenta con numerosos certificados internacionales que garantizan la alta calidad de su césped sintético. </p>
-               <p >
-                 <img src="<?php echo site_url('assets/images/web/img-ca.jpg'); ?>"/>
-                 <img src="<?php echo site_url('assets/images/web/img-cb.jpg'); ?>"/>
-                 <img src="<?php echo site_url('assets/images/web/img-cc.jpg'); ?>"/>
-                 <img src="<?php echo site_url('assets/images/web/img-cd.jpg'); ?>"/>
-                 <img src="<?php echo site_url('assets/images/web/img-ce.jpg'); ?>"/>
-               </p>
+               <div class="col-md-10 col-md-offset-2 col-sm-12 col-sm-offset-1 col-xs-12">
+                  <div class="col-md-2 col-sm-2 col-xs-3">
+                        <img src="<?php echo site_url('assets/images/web/img-ca.jpg'); ?>"  class="img-responsive" />
+                  </div>
+                  <div class="col-md-2  col-sm-2 col-xs-3">
+                       <img src="<?php echo site_url('assets/images/web/img-cb.jpg'); ?>"  class="img-responsive"/>
+                  </div>
+                  <div class="col-md-2  col-sm-2 col-xs-3">
+                        <img src="<?php echo site_url('assets/images/web/img-cc.jpg'); ?>" class="img-responsive" />
+                  </div>
+                  <div class="col-md-2  col-sm-2 col-xs-3">
+                       <img src="<?php echo site_url('assets/images/web/img-cd.jpg'); ?>"  class="img-responsive"/>
+                  </div>
+                  <div class="col-md-2  col-sm-2 col-xs-3">
+                       <img src="<?php echo site_url('assets/images/web/img-ce.jpg'); ?> "  class="img-responsive"/>
+                 </div>
+               </div>
            </div>
          </div>
        </div>
@@ -343,7 +387,7 @@
 
 
             <div class="col-md-6">
-              <p><img src="<?php echo site_url('assets/images/web/25afbx.jpg'); ?>"/></p>
+              <p><img src="<?php echo site_url('assets/images/web/25afbx.jpg'); ?>" class="img-responsive"/></p>
            </div> 
            <div class="col-md-6">
             <h3>MAS DE 25 AÑOS FABRICANDO EL MEJOR CÉSPED</h3>
@@ -351,7 +395,7 @@
                 Desarrollamos césped sintético con la más avanzada tecnología de producción desde hace más de 25 años en nuestra propia planta de fabricación mejorando día a día para brindarle la mejor calidad.  
               <br>
 
-                Conocer más sobre la empresa >
+              <a href="#" class="btn btn-link"><strong>    Conocer más sobre la empresa > </strong></a>
               </p>
            </div>
          </div>
