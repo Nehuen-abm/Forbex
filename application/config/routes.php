@@ -40,7 +40,13 @@
 
 
 $route['default_controller'] = "site";
-$route['(:any)/pagina'] = "site/pagina";
+$route['(:any)/novedades'] = "site/novedades";
+$route['(:any)/empresa'] = "site/empresa";
+$route['(:any)/clientes'] = "site/clientes";
+$route['(:any)/deporte/(:any)'] = "site/deportes/$2";
+$route['(:any)/certificaciones'] = "site/certificaciones";
+$route['(:any)/asesoramiento'] = "site/asesoramiento";
+$route['(:any)/contacto'] = "site/contacto";
 
 $route['404_override'] = '';
 
@@ -52,11 +58,11 @@ $route['404_override'] = '';
 
 
 $route['^en/(.+)$'] = "$1";
-$route['^es/(.+)$'] = "$1"; 
+$route['^sp/(.+)$'] = "$1"; 
 $route['^pr/(.+)$'] = "$1"; 
  
 $route['^en$'] = $route['default_controller'];
-$route['^es$'] = $route['default_controller'];
+$route['^sp$'] = $route['default_controller'];
 $route['^pr$'] = $route['default_controller'];
 
 

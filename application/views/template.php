@@ -25,7 +25,7 @@
         <div class="row">
           <div class="col-md-4 col-xs-6">
             
-            <div class="box-fbx-logo pull-left"><img src="<?php echo site_url('assets/images/web/boceto_futbol_profesional.jpg');?>"  class="img-responsive" alt="Logo"></div>
+            <div class="box-fbx-logo pull-left"><a href="<?php echo site_url($language);?>"><img src="<?php echo site_url('assets/images/web/boceto_futbol_profesional.jpg');?>"  class="img-responsive" alt="Logo"></a></div>
             
           </div>
            <div class="col-md-8 col-sm-6 col-xs-6">
@@ -33,7 +33,7 @@
           	 <div class="box-fbx-a pull-right">
               
                   <img  src="<?php echo site_url('assets/images/web/tel.jpg');?>"  class="tel">
-                  <a href='<?php echo  site_url('es') ?>'> <img src="http://placehold.it/30x30/&text=ES"  class="img-circle" alt=""></a>
+                  <a href='<?php echo  site_url('sp') ?>'> <img src="http://placehold.it/30x30/&text=SP"  class="img-circle" alt=""></a>
                   <a href='<?php echo  site_url('pr') ?>'> <img src="http://placehold.it/30x30/&text=PR"  class="img-circle" alt=""></a>
                   <a href='<?php echo  site_url('en') ?>'> <img src="http://placehold.it/30x30/&text=EN"  class="img-circle" alt=""></a> 
                
@@ -53,13 +53,22 @@
               </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                  <ul class="nav navbar-nav">
-                  <li><a href="#">NOVEDADES</a></li>
-                  <li><a href="#">EMPRESA</a></li>
-                  <li><a href="#">CLIENTES</a></li>
-                  <li><a href="#">DEPORTES</a></li>
-                  <li><a href="#">CERTIFICACIONES</a></li>
-                  <li><a href="#">ASESORAMIENTO</a></li>
-                  <li><a href="#">CONTACTO</a></li>
+                  <li class="<?php if($vista == 'novedades'){ echo 'active';}?>"><a href="<?php echo site_url($language."/novedades");?>">NOVEDADES</a></li>
+                  <li class="<?php if($vista == 'empresa'){ echo 'active';}?>"><a href="<?php echo site_url($language."/empresa");?>">EMPRESA</a></li>
+                  <li class="<?php if($vista == 'clientes'){ echo 'active';}?>"><a href="<?php echo site_url($language."/clientes");?>">CLIENTES</a></li>
+                  <li class="dropdown <?php if(isset($active_sec)){ if($vista == 'futbol' || $vista == 'minifutbol' || $vista == 'hockey' ||$vista == 'otros-deportes'  ){ echo 'active';}}?>">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">DEPORTES <span class="caret"></span></a>
+                    <ul class="dropdown-menu" role="menu">
+                      <li class="<?php if($vista == 'futbol'){ echo 'active';}?>"><a href="<?php echo site_url($language."/deporte/futbol");?>">FÚTBOL</a></li>
+                      <li class="<?php if($vista == 'minifutbol'){ echo 'active';}?>"><a href="<?php echo site_url($language."/deporte/minifutbol");?>">MINIFÚTBOL</a></li>
+                      <li class="<?php if($vista == 'hockey'){ echo 'active';}?>"><a href="<?php echo site_url($language."/deporte/hockey");?>">HOCKEY</a></li>
+                      <li class="<?php if($vista == 'otros-deportes'){ echo 'active';}?>"><a href="<?php echo site_url($language."/deporte/otros-deportes");?>">OTROS DEPORTES</a></li>
+                 
+                    </ul>
+                  </li>
+                  <li class="<?php if($vista == 'certificaciones'){ echo 'active';}?>"><a href="<?php echo site_url($language."/certificaciones");?>">CERTIFICACIONES</a></li>
+                  <li class="<?php if($vista == 'asesoramiento'){ echo 'active';}?>"><a href="<?php echo site_url($language."/asesoramiento");?>">ASESORAMIENTO</a></li>
+                  <li class="<?php if($vista == 'contacto'){ echo 'active';}?>"><a href="<?php echo site_url($language."/contacto");?>">CONTACTO</a></li>
                 </ul>
               </div>
             </nav>
@@ -95,287 +104,28 @@
 
 	<main id="body-fbx">
 
-		<section class="box-fbx-ftball">
-        <div class="container">
-          <div class="row ">
-
-                <div class="col-md-12 clear">
-                  <h1 class="text-center">  <?php  echo lang('msg_index_fp_titulo'); ?></h1>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  <p>  <?php  echo lang('msg_index_fp_text_col_a'); ?></p>
-                </div>
-
-                <div class="col-md-6 col-sm-6 col-xs-6">
-                  <p>   <?php  echo lang('msg_index_fp_text_col_b'); ?> </p>
-                </div>  
-
-
-
-                <div class="col-md-12 col-sm-12 col-xs-12 fbx-borde">
-                  <div class="row">
-                    <div class="col-md-6 col-sm-6 col-xs-6 hidden-xs">
-                      <div class="fbx-ico-cancha">  
-                        <img src="<?php echo site_url('assets/images/web/cancha.png');?> " class="img-responsive"/>
-                      </div>
-                    </div>
-
-                    <div class="col-md-6 col-sm-6 col-xs-12">
-                       <h2>
-                          ES MOMENTO DE PENSAR EN LAS TÁCTICAS, 
-                          PORQUE PARA LOGRAR EL JUEGO PERFECTO
-                          EL CAMPO, SIN DUDAS, ES FORBEX.
-                        </h2>
-                    </div> 
-                  </div>
-                </div>
-              <!--   <div class="col-md-12  col-sm-12 col-xs-12 clear"><hr></div>
-
-                
-
-                <div class="col-md-12 col-sm-12 col-xs-12 clear"><hr></div> -->
-          </div>
-          
-        </div>  
-    </section>
-
-    <section class="box-fbx-productos box-fbx-gris">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center" >
-            <h2>PRODUCTOS PARA FÚTBOL PROFESIONAL</h2>
-            <p>
-              Atendemos las necesidades de todas las entidades en las que se practica fútbol de manera profesional
-              brindandoles 3 productos diferentes con la calidad que exigen los mas altos estándares.
-
-            </p>
-          <div class="col-md-10 col-md-offset-1 col-sm-12">
-            <div class="row">
-                <div class="col-md-4 col-sm-4 col-xs-4"> 
-                  <img src="<?php echo site_url('assets/images/web/fbx-ta.jpg');?>" class="img-responsive" />
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4">
-                  <img src="<?php echo site_url('assets/images/web/fbx-tb.jpg');?>" class="img-responsive"  />
-                </div>
-                <div class="col-md-4 col-sm-4 col-xs-4"> 
-                  <img src="<?php echo site_url('assets/images/web/fbx-tc.jpg');?>" class="img-responsive" />
-                </div>
-            </div>
-          </div>
-          
-          </div>
-        </div>
-      </div>
-    </section>
-    <section>
-       <div class="container">
-                <div class="row">
-                    
-                   
-                     <div class="col-lg-6 col-md-8 col-sm-12 col-xs-12">
-                       
-                      <figure class="aim pull-left" >
-
-
-
-                        <img alt="Prueba" class="img-responsive wow fadeInDown capa-1" src="<?php echo site_url('assets/images/capa_1.png'); ?>" data-wow-delay="0.1s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeInDown capa-2" src="<?php echo site_url('assets/images/capa_2.png'); ?>" data-wow-delay="0.3s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeInDown capa-3" src="<?php echo site_url('assets/images/capa_3.png'); ?>" data-wow-delay="0.5s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeIn     capa-4" src="<?php echo site_url('assets/images/capa_4textoyflechas.png'); ?>" data-wow-delay="0.8s"/>
-                        <img alt="Prueba" class="img-responsive wow fadeIn     capa-5" src="<?php echo site_url('assets/images/logo_tencate.png'); ?> " data-wow-delay="1s"/>
-                      </figure>
-                        
-                    </div>
-                      <div class="col-lg-6 col-md-4 col-sm-12 col-xs-12">
-                        <div class="descripcion  wow fadeInDown" data-wow-delay="0.1s">
-                            
-                          <h3>11.000 MD</h3>
-                            <p>
-                            "11.000 MD" es el sistema que Forbex desarrolló exclusivamente para canchas de fútbol profesional. Se distingue por sus excelentes cualidades técnicas para la práctica de este deporte.
-                            </p>
-                             <p>      
-                            Este sistema tiene como principales características la importante altura de la fibra y el espacio entre pelos, rellenados con gránulos de caucho. Esta cualidad iguala a la sensación de correr sobre césped natural.
-                             </p>
-                             <p>
-                            El sistema "11.000 MD" disminuye los riesgos y otros problemas en jugadores profesionales, pudiendo ser utilizado los 365 días del año, independientemente de las condiciones climáticas.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-    </section>
-
-    <section class="box-fbx-gris bg-arrow fbx-aim-b ">
-          <div class="container">
-            <div class="row">
-              
-              <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                <div class="descripcion wow fadeInDown " data-wow-delay="0.2s">
-                    
-                  <h3>MF PRO</h3>
-                    <p>
-                    Uno de los sistemas que siguen las normas dadas por laboratorios aprobados por la F.I.F.A es "MF PRO", un sistema desarrollado exclusivamente para canchas de fútbol profesional. 
-                    </p>
-                     <p>      
-                   Tiene como principales características la importante altura de la fibra y el espacio entre pelos, rellenados con gránulos de caucho. Esta novedosa composición genera una excelente amortiguación, igualando la sensación de correr sobre el césped natural. 
-                     </p>
-                     <p>
-                    El sistema "MF PRO" disminuye los riesgos de lesiones, contracturas y otros problemas en jugadores profesionales, pudiendo ser utilizado los 365 días del año independientemente de las inclemencias climáticas.
-                    </p>
-                </div>
-            </div>
-             <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                  <p  class="wow fadeInRight " data-wow-delay="0.2s"> <img src="<?php echo site_url('assets/images/web/img-aim-b.jpg');?> " class="img-responsive"/></p>
-            </div>
-            </div>
-          </div>
-    </section>
-    <section>
-       <div class="container">
-                <div class="row">
-                    
-                   
-                     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                       
-                     <p><img src="<?php echo site_url('assets/images/web/img-aim-c.jpg');?>" class="img-responsive"/></p>
-                        
-                    </div>
-                      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-                        <div class="descripcion  wow fadeInDown" data-wow-delay="0.1s">
-                            
-                          <h3>360 M</h3>
-                            <p>
-                              Es otro de los sistemas desarrollados por Forbex, exclusivamente para el fútbol profesional. 
-                            </p>
-                             <p>      
-                             Esta variedad posee excelentes cualidades técnicas para la práctica del deporte y es uno de los sistemas que siguen las normas dadas por laboratorios aprobados por la F.I.F.A.
-                             </p>
-                             <p>
-                             El sistema "360M" disminuye los riesgos y otros problemas en jugadores profesionales, pudiendo ser utilizado los 365 días del año, independientemente de las condiciones climáticas.
-                            </p>
-                        </div>
-                    </div>
-
-
-
-                    <div class="col-md-12  col-sm-12  col-xs-12 fbx-relleno">
-                       <div class="row">
-                         <div class="col-md-6 col-sm-6  col-xs-12 box-fbx-text">
-                            <h2>La importancia del relleno</h2>
-                            <p>
-                              Para optimizar el rendimiento de un campo de césped sintético, el relleno del mismo debe contener 10kg de caucho por m2. 
-                            </p>
-                             <p>
-                                Si no se utilizara la cantidad correcta, el deterioro del campo seria alto y los estándares de rendimiento bajarían notablemente.
-                             </p>
-                             <p> 
-                                El caucho, al incluirse en los campos, debe tener una granulometría especial, detallada por los laboratorios de la FIFA. Esta granulometría permite que el producto dure más y tenga una mayor consistencia..
-                              </p>
-                         </div>
-                         <div class="col-md-6 col-sm-6  col-xs-12">
-                           <img src="<?php echo site_url('assets/images/web/img-relleno.jpg');?>" class="img-responsive"/>
-                         </div>
-                       </div>
-                    </div>
-                </div>
-               
-            </div>
-
-    </section>
-
-    <section class="fbx-vista-obras ">
-
-      <div class="container">
-         <div class="row">
-          <hr class="hr-fbx">
-        </div>
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h1>OBRAS DE FÚTBOL PROFESIONAL</h1>
-              <p>Llevamos instaladas diversas canchas en reconocidas instituciones deportivas. 
-                Los países que más juegan este deporte nos eligen para sus proyectos.
-              </p>
-          </div>
-          <div class="col-md-12 col-sm-12 col-xs-12 galeria">
-           <div class="col-md-9 col-sm-9 col-xs-9" >
-             <img src="<?php echo site_url('assets/images/imagenes obras/01_river.jpg'); ?>"   class="img-responsive">
-
-           
-               <div class="col-md-3 col-sm-3 col-xs-3"><img src="<?php echo site_url('assets/images/imagenes obras/02_grecia.jpg'); ?>"  class="img-responsive"></div>
-               <div class="col-md-9 col-sm-9  col-xs-3 "><img src="<?php echo site_url('assets/images/imagenes obras/3.jpg'); ?>"          class="img-responsive"></div>
-             
-           </div>
-           <div class="col-md-3 col-sm-3  col-xs-3 " >
-             <img src="<?php echo site_url('assets/images/imagenes obras/4.jpg'); ?>" class="img-responsive">
-           </div>
-           <div class="col-md-6 col-sm-6   col-xs-6" >
-            <img src="<?php echo site_url('assets/images/imagenes obras/5.jpg'); ?>" class="img-responsive">
-            <img src="<?php echo site_url('assets/images/imagenes obras/7.jpg'); ?>" class="img-responsive">
-           </div>
-
-
-           <div class="col-md-6 col-sm-6  col-xs-6">   
-                <img src="<?php echo site_url('assets/images/imagenes obras/6.jpg'); ?>" class="img-responsive">
-                <div class="col-md-6 col-sm-6  col-xs-6"><img src="<?php echo site_url('assets/images/imagenes obras/8.jpg'); ?>" class="img-responsive"></div>
-                <div class="col-md-6  col-sm-6  col-xs-6"><img src="<?php echo site_url('assets/images/imagenes obras/9.jpg'); ?>" class="img-responsive"></div>
-           </div>
-
-          </div>
-            <p class="text-center"><a href="#" class="btn btn-link">Ver banco de imágenes ></a></p>
-
-        </div>
-      </div>
-    </section>
-    <section class="box-fbx-gris certi">
-       <div class="container">
-         <div class="row">
-           <div class="col-md-12 text-center">
-               <h2>CERTIFICACIONES</h2>
-               <p>Forbex cuenta con numerosos certificados internacionales que garantizan la alta calidad de su césped sintético. </p>
-               <div class="col-md-10 col-md-offset-2 col-sm-12 col-sm-offset-1 col-xs-12">
-                  <div class="col-md-2 col-sm-2 col-xs-3">
-                        <img src="<?php echo site_url('assets/images/web/img-ca.jpg'); ?>"  class="img-responsive" />
-                  </div>
-                  <div class="col-md-2  col-sm-2 col-xs-3">
-                       <img src="<?php echo site_url('assets/images/web/img-cb.jpg'); ?>"  class="img-responsive"/>
-                  </div>
-                  <div class="col-md-2  col-sm-2 col-xs-3">
-                        <img src="<?php echo site_url('assets/images/web/img-cc.jpg'); ?>" class="img-responsive" />
-                  </div>
-                  <div class="col-md-2  col-sm-2 col-xs-3">
-                       <img src="<?php echo site_url('assets/images/web/img-cd.jpg'); ?>"  class="img-responsive"/>
-                  </div>
-                  <div class="col-md-2  col-sm-2 col-xs-3">
-                       <img src="<?php echo site_url('assets/images/web/img-ce.jpg'); ?> "  class="img-responsive"/>
-                 </div>
-               </div>
-           </div>
-         </div>
-       </div>
-    </section>    
+	<?php $this->load->view($vista)?>
     <section class="parallax-quote parallaxBg box-fbx-bf-fixed">
         <div class="container">
-          <!--   <div class="parallax-quote-in">
-                <p>If you can design one thing <span class="color-green">you can design</span> everything. <br> Just Believe It.</p>
-                <small>- HtmlStream -</small>
-            </div> -->
-             <div class="col-md-7 col-md-offset-5">
-             <h2>FORBEX ESTARÁ PRESENTE EN CADA PASO</h2>
-              <p>
-                Nuestros asesores comerciales lo asistiran desde el momento de la creación de la cancha, ofreciendole toda nuestra variedad de servicios para que sólo tener que preocuparse por el juego.
-              </p>
-             
-                <ul>
-                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-cca.png'); ?>"/><br><span>test</span></p></li>
-                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-ccb.png'); ?>"/><br><span>test</span></p></li>
-                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-ccc.png'); ?>"/><br><span>test</span></p></li>
-                  <li><p><img src="<?php echo site_url('assets/images/web/fbx-ccd.png'); ?>"/><br><span>test</span></p></li>
+         
+             <div class="row">
+               <div class="col-lg-7 col-lg-offset-5 col-md-9 col-md-offset-2">
+                 <h2>FORBEX ESTARÁ PRESENTE EN CADA PASO</h2>
+                  <p>
+                    Nuestros asesores comerciales lo asistiran desde el momento de la creación de la cancha, ofreciendole toda nuestra variedad de servicios para que sólo tener que preocuparse por el juego.
+                  </p>
+                  
+                    <div class="row fbx-cerca-paso" >
+                      <div class="col-md-3 col-sm-3 col-xs-3"> <p class="text-center"><img src="<?php echo site_url('assets/images/web/fbx-cca.png'); ?>" class="img-responsive" /><br><span>DISEÑO</span></p>        </div>
+                      <div class="col-md-3 col-sm-3 col-xs-3"> <p class="text-center"><img src="<?php echo site_url('assets/images/web/fbx-ccb.png'); ?>" class="img-responsive" /><br><span>FABRICACIÓN</span></p>   </div>
+                      <div class="col-md-3 col-sm-3 col-xs-3"> <p class="text-center"><img src="<?php echo site_url('assets/images/web/fbx-ccc.png'); ?>" class="img-responsive" /><br><span>INSTALACIÓN</span></p>   </div>
+                      <div class="col-md-3 col-sm-3 col-xs-3"> <p class="text-center"><img src="<?php echo site_url('assets/images/web/fbx-ccd.png'); ?>" class="img-responsive" /><br><span>MANTENIMIENTO</span></p>  </div>
+                   
+                    </div>
                
-                </ul>
-           
-           </div>
+               </div>
+             </div>
+
         </div>
     </section>
   
@@ -385,47 +135,50 @@
          <div class="row">
 
 
+              <div class="col-md-6">
+                  <p><img src="<?php echo site_url('assets/images/web/25afbx.jpg'); ?>" class="img-responsive"/></p>
+               </div> 
+                 <div class="col-md-12 ">
+                  <h3>MAS DE 25 AÑOS FABRICANDO EL MEJOR CÉSPED</h3>
+                    <p>
+                      Desarrollamos césped sintético con la más avanzada tecnología de producción desde hace más de 25 años en nuestra propia planta de fabricación mejorando día a día para brindarle la mejor calidad.  
+                    <br>
 
-            <div class="col-md-6">
-              <p><img src="<?php echo site_url('assets/images/web/25afbx.jpg'); ?>" class="img-responsive"/></p>
-           </div> 
-           <div class="col-md-6">
-            <h3>MAS DE 25 AÑOS FABRICANDO EL MEJOR CÉSPED</h3>
-              <p>
-                Desarrollamos césped sintético con la más avanzada tecnología de producción desde hace más de 25 años en nuestra propia planta de fabricación mejorando día a día para brindarle la mejor calidad.  
-              <br>
+                    <a href="#" class="btn btn-link"><strong>    Conocer más sobre la empresa > </strong></a>
+                    </p>
+                 </div>
+               </div>
 
-              <a href="#" class="btn btn-link"><strong>    Conocer más sobre la empresa > </strong></a>
-              </p>
-           </div>
-         </div>
+               <div class="col-md-12 clear"><hr class="hr-fbx-b"/></div>
+               <div class="col-md-7">
+                  <h3>CONTACTO</h3>
+                  <p>Puede llamarnos, enviarnos un mail, o bien, completar el formulario a continuación.  A la brevedad, uno de nuestros representantes lo va a estar contactando.
+                  </p>
+                  <h4>CASA CENTRAL ARGENTINA</h4>
+                  <p>Erezcano 3857, Buenos Aires, Argentina<br>
+                    Teléfono: (54 - 11) 4919 - 0999  <br>
+                    Correo electrónico: info@forbex.com
+                  </p>
+                  <h4>LÍNEA DIRECTA DESDE ARGENTINA</h4>
+                  <p>
+                    0 800 666 0613
+                  </p>
 
-         <div class="col-md-12 clear"><hr class="hr-fbx-b"/></div>
-           <div class="col-md-7">
-              <h3>CONTACTO</h3>
-              <p>Puede llamarnos, enviarnos un mail, o bien, completar el formulario a continuación.  A la brevedad, uno de nuestros representantes lo va a estar contactando.
-              </p>
-              <h4>CASA CENTRAL ARGENTINA</h4>
-              <p>Erezcano 3857, Buenos Aires, Argentina<br>
-                Teléfono: (54 - 11) 4919 - 0999  <br>
-                Correo electrónico: info@forbex.com
-              </p>
-              <h4>LÍNEA DIRECTA DESDE ARGENTINA</h4>
-              <p>
-                0 800 666 0613
-              </p>
+               
+                  <div class="row"> <div class="col-md-12">  <div class="row"><div class="col-md-7 row" > <p><hr class="hr-fbx no-mp"></p> </div></div></div></div>
 
+                 
+                  <ul class="social">
+                  <li><a href="#" class="btn btn-danger "><i class="fa fa-youtube  fa-2x"></i> </a></li>
+                  <li><a href="#" class="btn btn-info "><i class="fa fa-skype  fa-2x"></i> </a></li>
+                  <li><a href="#" class="btn btn-primary "><i class="fa fa-facebook  fa-2x"></i> </a></li>
+                  <ul>
+               
+               </div> 
            
-         <div class="row"> <div class="col-md-12">  <div class="row"><div class="col-md-7" > <p><hr class="hr-fbx no-mp"></p> </div></div></div></div>
-
-             <p> <a href="#" class="btn btn-link "><i class="fa fa-youtube  fa-2x"></i> </a>
-              <a href="#" class="btn btn-link "><i class="fa fa-skype  fa-2x"></i> </a>
-              <a href="#" class="btn btn-link "><i class="fa fa-facebook-square  fa-2x"></i> </a></p>
-
-           </div> 
 
 
-           <div class="col-md-5  form-at-empresa" >
+           <div class="col-md-5 col-sm-12 col-xs-12  form-at-empresa" >
 
               <form class="form" action="#" method="POST" id="mail_empresa">
                 <div class="form-group">
